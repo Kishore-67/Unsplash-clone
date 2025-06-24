@@ -1,5 +1,5 @@
 import React from 'react';
-import Collections from './Collections';
+import Collections from './Collection';
 import ImageGrid from './ImageGrid';
 import '../Styles/Home.css';
 

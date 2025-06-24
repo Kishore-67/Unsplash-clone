@@ -9,8 +9,9 @@ function App() {
     <>
         <Navbar />
         <MenuBar/>
-        <Sidebar />
         <Home />
+        <Sidebar />
+        
     </>
     
   );

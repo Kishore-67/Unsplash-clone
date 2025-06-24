@@ -1,5 +1,5 @@
 import React from 'react';
-import './ImageGrid.css';
+import '../Styles/ImageGrid.css';
 
 export default function ImageGrid() {
   const images = [
