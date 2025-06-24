@@ -1,23 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Styles/Navbar.css';
-import logo from '../Assets/unsplash-logo.png';
-export default function Navbar() {
-  return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        <img src={logo} alt="unsplash" className="logo" />
-        <input
-          type="text"
-          className="search"
-          placeholder="Search photos and illustrations"
-        />
-      </div>
+import { FaBars } from "react-icons/fa";
 
-      <div className="nav-links">
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <div className="Container">
+      <div className="logo">Unsplash</div>
+
+      <div className={`nav-elements ${menuOpen ? 'show' : ''}`}>
         <p>Get Unsplash+</p>
         <p>Log in</p>
-        <button className="submit-btn">Submit an image</button>
+        <button>Submit an Image</button>
       </div>
-    </nav>
+
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <FaBars />
+      </div>
+    </div>
   );
 }
