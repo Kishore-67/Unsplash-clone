@@ -5,6 +5,16 @@
   margin-top: 20px;
 }
 
+/* Home.css or ImageGrid.css (where you placed .image-grid) */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
 .grid-img {
   width: 100%;
   height: auto;

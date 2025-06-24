@@ -7,13 +7,13 @@ import Sidebar from './Components/SideBar';
 function App() {
   return (
     <>
-        <Navbar />
-        <MenuBar/>
-        <Home />
+      <Navbar />
+      <MenuBar />
+      <div className="main-container">
         <Sidebar />
-        
+        <Home />
+      </div>
     </>
-    
   );
 }
 
